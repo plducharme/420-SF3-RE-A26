@@ -1,0 +1,5 @@
+QPushButton#monbouton {
+    color: "blue";
+    background-color: "red";
+    border: 3px;
+}
