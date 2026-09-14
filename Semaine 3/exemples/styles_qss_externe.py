@@ -25,7 +25,8 @@ class StylesExterne(QFrame):
 app = QApplication()
 # Lecture du fichier
 with open("./styles.qss") as fichier:
-    app.setStyleSheet(fichier.read())
+    config_qss = fichier.read()
+    app.setStyleSheet(config_qss)
 se = StylesExterne()
 se.show()
 app.exec()

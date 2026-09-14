@@ -1,4 +1,5 @@
 from PySide6.QtWidgets import QApplication, QLabel
+from PySide6.QtCore import Qt
 
 
 class QLabelHtml(QLabel):
@@ -22,6 +23,7 @@ class QLabelHtml(QLabel):
             <li>Troisième élément numéroté</li>
         </ol>
         """)
+        self.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
 
 app = QApplication()

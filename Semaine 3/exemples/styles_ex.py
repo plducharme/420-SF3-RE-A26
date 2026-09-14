@@ -64,7 +64,8 @@ class StylesExemple(QFrame):
             self.libelle_variant.setFont(police)  # Applique la police sélectionnée au QLabel
 
     def bouton_image_dialogue_clicked(self):
-        chemin_image, filtre = QFileDialog.getOpenFileName(self, "Choisir une image", "./images", "Ficher Images (*.png)")
+        chemin_image, filtre = QFileDialog.getOpenFileName(self, "Choisir une image", "./images",
+                                                           "Ficher Images (*.png)")
         self.libelle_image.setPixmap(QPixmap(chemin_image))
 
 
