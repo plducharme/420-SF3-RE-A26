@@ -55,6 +55,7 @@ class FenetrePrincipale(QMainWindow):
 
         # Nom de la fenêtre principale
         self.setWindowTitle("Exemple QMainWindow")
+        self.setWindowIcon(icone)
 
     # Méthode pour créer les menus
     # Un QMenu est ajouté à une QMenuBar
@@ -78,6 +79,6 @@ class FenetrePrincipale(QMainWindow):
 
 
 app = QApplication(sys.argv)
-f = FenetrePrincipale()
-f.show()
+fenetre_principale = FenetrePrincipale()
+fenetre_principale.show()
 app.exec()

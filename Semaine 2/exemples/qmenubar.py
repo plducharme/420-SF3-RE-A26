@@ -9,6 +9,9 @@ class MaBarreDeMenuEx(QMainWindow):
         barre_de_menu1 = QMenuBar()
 
         menu_test = QMenu("Test")
+        # Équivalent:
+        # menu_test = QMenu()
+        # menu_test.setTitle("Test")
         action_fermer = QAction(parent=self)
         action_fermer.setText("Fermer l'application")
         action_fermer.triggered.connect(self.close)

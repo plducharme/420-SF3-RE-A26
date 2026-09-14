@@ -10,14 +10,17 @@ class MaBarreDeStatut(QMainWindow):
         self.setCentralWidget(bouton)
 
         self.barre_de_statut = QStatusBar()
-        label_normal = QLabel("Ceci est un message normal")
+        self.label_normal = QLabel("Ceci est un message normal")
+        self.compte_temporaire = 0
         label_permanent = QLabel("Ceci est un message permanent")
-        self.barre_de_statut.addWidget(label_normal)
+        self.barre_de_statut.addWidget(self.label_normal)
         self.barre_de_statut.addPermanentWidget(label_permanent)
         self.setStatusBar(self.barre_de_statut)
 
     def bouton_clicked(self):
         self.barre_de_statut.showMessage("Message temporaire", timeout=5000)
+        self.compte_temporaire += 1
+        self.label_normal.setText("Ceci est un message normal. Nb temp: " + str(self.compte_temporaire))
 
 
 app = QApplication()

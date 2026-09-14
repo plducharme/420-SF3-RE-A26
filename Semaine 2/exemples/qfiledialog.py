@@ -14,8 +14,8 @@ class Fenetre(QMainWindow):
 
         self.dialogue.exec()
 
-    def fichier_selectionne(self, dossier):
-        print("Dossier sélectionné : ", dossier)
+    def fichier_selectionne(self, fichier):
+        print("Fichier sélectionné : ", fichier)
 
 
 app = QApplication()
