@@ -1,0 +1,19 @@
+QPushButton#monbouton {
+    color: "blue";
+    background-color: "red";
+    border: 3px;
+}
+
+QPushButton#autrebouton {
+    color: #FF3476;
+}
+
+QPushButton#autrebouton:hover {
+    background-color: #25FF76;
+}
+
+QFrame#widgetprincipal {
+    background-image: url("images/fry.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
