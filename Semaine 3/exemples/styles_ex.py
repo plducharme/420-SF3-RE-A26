@@ -2,7 +2,10 @@ from PySide6.QtWidgets import QApplication, QFrame, QLabel, QPushButton, QVBoxLa
 from PySide6.QtGui import QPixmap, QFont, QIcon
 from PySide6.QtCore import QSize
 
-# Icône provenant de <a href="https://www.flaticon.com/free-icons/ballpoint" title="ballpoint icons">Ballpoint icons created by Smashicons - Flaticon</a>
+
+# Icône provenant de <a href="https://www.flaticon.com/free-icons/ballpoint" title="ballpoint icons">Ballpoint icons
+# created by Smashicons - Flaticon</a>
+
 
 class StylesExemple(QFrame):
     def __init__(self):
