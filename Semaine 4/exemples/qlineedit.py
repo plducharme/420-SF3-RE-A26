@@ -7,6 +7,7 @@ class FenetrePrincipale(QMainWindow):
         super().__init__()
 
         widget_central = QWidget()
+        # Cette fois-ci, on utilise un QGridLayout comme disposition
         disposition = QGridLayout()
         widget_central.setLayout(disposition)
         self.setCentralWidget(widget_central)
@@ -23,7 +24,7 @@ class FenetrePrincipale(QMainWindow):
         disposition.addWidget(entree_masque, 1, 0)
 
         texte_edit = QTextEdit()
-        disposition.addWidget(texte_edit)
+        disposition.addWidget(texte_edit, 1, 1)
 
 
 app = QApplication()

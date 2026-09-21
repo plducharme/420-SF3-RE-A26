@@ -1,4 +1,4 @@
-from PySide6.QtWidgets import QApplication, QMainWindow, QWidget, QVBoxLayout, QCheckBox, QButtonGroup
+from PySide6.QtWidgets import QApplication, QMainWindow, QWidget, QVBoxLayout, QCheckBox, QMessageBox
 from PySide6.QtGui import QIcon
 
 
@@ -15,7 +15,7 @@ class FenetrePrincipale(QMainWindow):
         self.case_canard = QCheckBox()
         self.case_canard.setIcon(QIcon('canard.png'))
         self.case_canard.setText("Canard")
-        self.case_canard.stateChanged.connect(self.case_canard_changee)
+        self.case_canard.checkStateChanged.connect(self.case_canard_changee)
         self.case_ornithorynque = QCheckBox()
         self.case_ornithorynque.setText("Ornithorynque")
         self.case_chien = QCheckBox()
@@ -26,7 +26,12 @@ class FenetrePrincipale(QMainWindow):
         disposition.addWidget(self.case_chien)
 
     def case_canard_changee(self):
-        print("Case canard clicked")
+        msg = ""
+        if self.case_canard.isChecked():
+            msg = "Cliquée"
+        else:
+            msg = "Non-Cliquée"
+        QMessageBox.information(self, "Case canard", f"Case canard changée! {msg}")
 
 
 app = QApplication()

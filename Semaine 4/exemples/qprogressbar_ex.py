@@ -1,3 +1,4 @@
+from PySide6.QtCore import QSize
 from PySide6.QtWidgets import QApplication, QVBoxLayout, QProgressBar, QMainWindow, QTextEdit, QPushButton, QFrame
 
 
@@ -6,6 +7,7 @@ class BarreProgressionEx(QMainWindow):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("Exemple barre de progression")
+        self.setBaseSize(QSize(850, 600))
 
         cadre_principale = QFrame()
         self.setCentralWidget(cadre_principale)
@@ -23,6 +25,8 @@ class BarreProgressionEx(QMainWindow):
         disposition.addWidget(self.barre_progression_principale)
 
         self.barre_progression_statut = QProgressBar()
+        # Au lieu d'afficher le pourcentage, on affiche notre propre message avec les valeurs
+        self.barre_progression_statut.setFormat("%v lignes ajoutées sur %m lignes totales")
 
         self.statusBar().addWidget(self.barre_progression_statut)
 

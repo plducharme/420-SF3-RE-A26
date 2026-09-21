@@ -43,6 +43,8 @@ class GroupeBoutonEx(QFrame):
         disposition.addLayout(disposition_boutons_independants)
         disposition.addLayout(disposition_boutons_diete)
 
+        # Le QGroupBox est un widget qui permet de regrouper les boutons dans un widget visuel qui peut être
+        # activé/désactivé si setCheckable est à True
         groupe_options_1 = QGroupBox()
         groupe_options_1.setCheckable(True)
         self.groupe_options_cases_a = QCheckBox("A")
