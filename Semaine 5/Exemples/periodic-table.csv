@@ -1,0 +1,119 @@
+﻿Atomic Number;Symbol;Name;Year Discovered;Atomic Mass;Electronic Configuration;Electronegativity;Atomic Radius;Ion Radius;Ionization Energy;Electron Affinity;Oxidation States;Standard State;Bonding Type;Melting Point;Boiling Point;Density;Group Block;Van Del Waals Radius
+52;Te;Tellurium;1782;127.60(3);[Kr] 4d10 5s2 5p4;2.1;135.0;221 (-2);869.0;-190.0;-2, 2, 4, 5, 6;solid;metallic;723.0;1261.0;6.24;metalloid;206
+101;Md;Mendelevium;1955;[258];[Rn] 5f13 7s2;1.3;;;635.0;;2, 3;;;1100.0;;;actinoid;
+13;Al;Aluminum;;26.9815386(8);[Ne] 3s2 3p1;1.6099999999999999;118.0;53.5 (+3);578.0;-43.0;1, 3;solid;metallic;933.0;2792.0;2.7;metal;
+61;Pm;Promethium;1947;[145];[Xe] 4f5 6s2;1.13;;97 (+3);540.0;-50.0;3;solid;metallic;1373.0;3273.0;7.264;lanthanoid;
+80;Hg;Mercury;;200.59(2);[Xe] 4f14 5d10 6s2;2.0;149.0;119 (+1);1007.0;0.0;1, 2, 4;liquid;metallic;234.0;630.0;13.534;transition metal;155
+116;Lv;Livermorium;2000;[293];[Rn] 5f14 6d10 7s2 7p4;;;;;;;;;;;;post-transition metal;
+6;C;Carbon;;12.0107(8);[He] 2s2 2p2;2.55;77.0;16 (+4);1087.0;-154.0;-4, -3, -2, -1, 1, 2, 3, 4;solid;covalent network;3823.0;4300.0;2.26;nonmetal;170
+21;Sc;Scandium;1876;44.955912(6);[Ar] 3d1 4s2;1.3599999999999999;144.0;74.5 (+3);633.0;-18.0;1, 2, 3;solid;metallic;1814.0;3103.0;2.985;transition metal;
+32;Ge;Germanium;1886;72.64(1);[Ar] 3d10 4s2 4p2;2.01;122.0;73 (+2);762.0;-119.0;-4, 1, 2, 3, 4;solid;metallic;1211.0;3093.0;5.323;metalloid;
+63;Eu;Europium;1901;151.964(1);[Xe] 4f7 6s2;1.2;;117 (+2);547.0;-50.0;2, 3;solid;metallic;1095.0;1800.0;5.244;lanthanoid;
+83;Bi;Bismuth;;208.98040(1);[Xe] 4f14 5d10 6s2 6p3;2.02;146.0;103 (+3);703.0;-91.0;-3, 3, 5;solid;metallic;544.0;1837.0;9.78;metal;
+103;Lr;Lawrencium;1961;[262];[Rn] 5f14 7s2 7p1;1.3;;;;;3;;;1900.0;;;transition metal;
+105;Db;Dubnium;1967;[268];[Rn] 5f14 6d3 7s2;;;;;;;;;;;;transition metal;
+27;Co;Cobalt;;58.933195(5);[Ar] 3d7 4s2;1.88;126.0;74.5 (+2*);760.0;-64.0;-1, 1, 2, 3, 4, 5;solid;metallic;1768.0;3200.0;8.9;transition metal;
+48;Cd;Cadmium;1817;112.411(8);[Kr] 4d10 5s2;1.69;148.0;95 (+2);868.0;0.0;2;solid;metallic;594.0;1040.0;8.65;transition metal;158
+57;La;Lanthanum;1839;138.90547(7);[Xe] 5d1 6s2;1.1;169.0;103.2 (+3);538.0;-48.0;2, 3;solid;metallic;1193.0;3737.0;6.146;lanthanoid;
+62;Sm;Samarium;1853;150.36(2);[Xe] 4f6 6s2;1.17;;122 (+2);545.0;-50.0;2, 3;solid;metallic;1345.0;2076.0;7.353;lanthanoid;
+91;Pa;Protactinium;1913;231.03588(2);[Rn] 5f2 6d1 7s2;1.5;;104 (+3);568.0;;3, 4, 5;solid;metallic;1845.0;4273.0;15.37;actinoid;
+8;O;Oxygen;1774;15.9994(3);[He] 2s2 2p4;3.44;73.0;140 (-2);1314.0;-141.0;-2, -1, 1, 2;gas;diatomic;55.0;90.0;0.001429;nonmetal;152
+16;S;Sulfur;;32.065(5);[Ne] 3s2 3p4;2.58;102.0;184 (-2);1000.0;-200.0;-2, -1, 1, 2, 3, 4, 5, 6;solid;covalent network;388.0;718.0;1.96;nonmetal;180
+33;As;Arsenic;;74.92160(2);[Ar] 3d10 4s2 4p3;2.18;119.0;58 (+3);947.0;-78.0;-3, 2, 3, 5;solid;metallic;1090.0;887.0;5.727;metalloid;185
+92;U;Uranium;1789;238.02891(3);[Rn] 5f3 6d1 7s2;1.38;;102.5 (+3);598.0;;3, 4, 5, 6;solid;metallic;1408.0;4200.0;19.05;actinoid;186
+5;B;Boron;1807;10.811(7);[He] 2s2 2p1;2.04;82.0;27 (+3);801.0;-27.0;1, 2, 3;solid;covalent network;2348.0;4273.0;2.46;metalloid;
+49;In;Indium;1863;114.818(3);[Kr] 4d10 5s2 5p1;1.78;144.0;80 (+3);558.0;-29.0;1, 2, 3;solid;metallic;430.0;2345.0;7.31;metal;193
+45;Rh;Rhodium;1803;102.90550(2);[Kr] 4d8 5s1;2.2800000000000002;135.0;66.5 (+3);720.0;-110.0;-1, 1, 2, 3, 4, 5, 6;solid;metallic;2237.0;3968.0;12.45;transition metal;
+56;Ba;Barium;1808;137.327(7);[Xe] 6s2;0.89;198.0;135 (+2);503.0;-14.0;2;solid;metallic;1000.0;2143.0;3.51;alkaline earth metal;
+96;Cm;Curium;1944;[247];[Rn] 5f7 6d1 7s2;1.3;;97 (+3);581.0;;3, 4;solid;metallic;1618.0;3383.0;13.51;actinoid;
+37;Rb;Rubidium;1861;85.4678(3);[Kr] 5s1;0.8200000000000001;211.0;152 (+1);403.0;-47.0;1;solid;metallic;312.0;961.0;1.532;alkali metal;
+58;Ce;Cerium;1803;140.116(1);[Xe] 4f1 5d1 6s2;1.12;;102 (+3);534.0;-50.0;2, 3, 4;solid;metallic;1071.0;3633.0;6.689;lanthanoid;
+86;Rn;Radon;1900;[222];[Xe] 4f14 5d10 6s2 6p6;;145.0;;1037.0;;2;gas;atomic;202.0;211.0;0.00973;noble gas;
+30;Zn;Zinc;1746;65.38(2);[Ar] 3d10 4s2;1.65;131.0;74 (+2);906.0;0.0;2;solid;metallic;693.0;1180.0;7.14;transition metal;139
+82;Pb;Lead;;207.2(1);[Xe] 4f14 5d10 6s2 6p2;2.33;147.0;119 (+2);716.0;-35.0;-4, 2, 4;solid;metallic;601.0;2022.0;11.34;metal;202
+108;Hs;Hassium;1984;[270];[Rn] 5f14 6d6 7s2;;;;;;;;;;;;transition metal;
+72;Hf;Hafnium;1923;178.49(2);[Xe] 4f14 5d2 6s2;1.3;150.0;71 (+4);659.0;0.0;2, 3, 4;solid;metallic;2506.0;4876.0;13.31;transition metal;
+71;Lu;Lutetium;1907;174.9668(1);[Xe] 4f14 5d1 6s2;1.27;160.0;86.1 (+3);524.0;-50.0;3;solid;metallic;1936.0;3675.0;9.841;lanthanoid;
+55;Cs;Cesium;1860;132.9054519(2);[Xe] 6s1;0.79;225.0;167 (+1);376.0;-46.0;1;solid;metallic;302.0;944.0;1.879;alkali metal;
+17;Cl;Chlorine;1774;35.453(2);[Ne] 3s2 3p5;3.16;99.0;181 (-1);1251.0;-349.0;-1, 1, 2, 3, 4, 5, 6, 7;gas;covalent network;172.0;239.0;0.003214;halogen;175
+35;Br;Bromine;1826;79.904(1);[Ar] 3d10 4s2 4p5;2.96;114.0;196 (-1);1140.0;-325.0;-1, 1, 3, 4, 5, 7;liquid;covalent network;266.0;332.0;3.12;halogen;185
+46;Pd;Palladium;1803;106.42(1);[Kr] 4d10;2.2;131.0;59 (+1);804.0;-54.0;2, 4;solid;metallic;1828.0;3236.0;12.023;transition metal;163
+47;Ag;Silver;;107.8682(2);[Kr] 4d10 5s1;1.9300000000000002;153.0;115 (+1);731.0;-126.0;1, 2, 3;solid;metallic;1235.0;2435.0;10.49;transition metal;172
+77;Ir;Iridium;1803;192.217(3);[Xe] 4f14 5d7 6s2;2.2;137.0;68 (+3);880.0;-151.0;-3, -1, 1, 2, 3, 4, 5, 6;solid;metallic;2739.0;4701.0;22.65;transition metal;
+34;Se;Selenium;1817;78.96(3);[Ar] 3d10 4s2 4p4;2.55;116.0;198 (-2);941.0;-195.0;-2, 2, 4, 6;solid;metallic;494.0;958.0;4.819;nonmetal;190
+50;Sn;Tin;;118.710(7);[Kr] 4d10 5s2 5p2;1.96;141.0;112 (+2);709.0;-107.0;-4, 2, 4;solid;metallic;505.0;2875.0;7.31;metal;217
+39;Y;Yttrium;1794;88.90585(2);[Kr] 4d1 5s2;1.22;162.0;90 (+3);600.0;-30.0;1, 2, 3;solid;metallic;1799.0;3618.0;4.472;transition metal;
+109;Mt;Meitnerium;1982;[276];[Rn] 5f14 6d7 7s2;;;;;;;;;;;;transition metal;
+3;Li;Lithium;1817;6.941(2);[He] 2s1;0.98;134.0;76 (+1);520.0;-60.0;1;solid;metallic;454.0;1615.0;0.535;alkali metal;182
+94;Pu;Plutonium;1940;[244];[Rn] 5f6 7s2;1.28;;100 (+3);585.0;;3, 4, 5, 6, 7;solid;metallic;913.0;3503.0;19.816;actinoid;
+117;Ts;Tennessine;2010;[294];[Rn] 5f14 6d10 7s2 7p5;;;;;;;;;;;;post-transition metal;
+29;Cu;Copper;;63.546(3);[Ar] 3d10 4s1;1.9;138.0;77 (+1);746.0;-118.0;1, 2, 3, 4;solid;metallic;1358.0;3200.0;8.92;transition metal;140
+81;Tl;Thallium;1861;204.3833(2);[Xe] 4f14 5d10 6s2 6p1;2.04;148.0;150 (+1);589.0;-19.0;1, 3;solid;metallic;577.0;1746.0;11.85;metal;196
+66;Dy;Dysprosium;1886;162.500(1);[Xe] 4f10 6s2;1.22;;107 (+2);573.0;-50.0;2, 3;solid;metallic;1685.0;2840.0;8.551;lanthanoid;
+67;Ho;Holmium;1878;164.93032(2);[Xe] 4f11 6s2;1.23;;90.1 (+3);581.0;-50.0;3;solid;metallic;1747.0;2973.0;8.795;lanthanoid;
+95;Am;Americium;1944;[243];[Rn] 5f7 7s2;1.3;;126 (+2);578.0;;2, 3, 4, 5, 6;solid;metallic;1449.0;2284.0;;actinoid;
+38;Sr;Strontium;1790;87.62(1);[Kr] 5s2;0.9500000000000001;192.0;118 (+2);550.0;-5.0;2;solid;metallic;1050.0;1655.0;2.63;alkaline earth metal;
+79;Au;Gold;;196.966569(4);[Xe] 4f14 5d10 6s1;2.54;144.0;137 (+1);890.0;-223.0;-1, 1, 2, 3, 5;solid;metallic;1337.0;3129.0;19.3;transition metal;166
+76;Os;Osmium;1803;190.23(3);[Xe] 4f14 5d6 6s2;2.2;128.0;63 (+4);840.0;-106.0;-2, -1, 1, 2, 3, 4, 5, 6, 7, 8;solid;metallic;3306.0;5285.0;22.61;transition metal;
+90;Th;Thorium;1828;232.03806(2);[Rn] 6d2 7s2;1.3;;94 (+4);587.0;;2, 3, 4;solid;metallic;2023.0;5093.0;11.724;actinoid;
+98;Cf;Californium;1950;[251];[Rn] 5f10 7s2;1.3;;95 (+3);608.0;;2, 3, 4;solid;metallic;1173.0;;15.1;actinoid;
+104;Rf;Rutherfordium;1969;[267];[Rn] 5f14 6d2 7s2;;;;;;4;;;;;;transition metal;
+42;Mo;Molybdenum;1778;95.96(2);[Kr] 4d5 5s1;2.16;145.0;69 (+3);684.0;-72.0;-2, -1, 1, 2, 3, 4, 5, 6;solid;metallic;2896.0;4912.0;10.28;transition metal;
+53;I;Iodine;1811;126.90447(3);[Kr] 4d10 5s2 5p5;2.66;133.0;220 (-1);1008.0;-295.0;-1, 1, 3, 5, 7;solid;covalent network;387.0;457.0;4.94;halogen;198
+59;Pr;Praseodymium;1885;140.90765(2);[Xe] 4f3 6s2;1.13;;99 (+3);527.0;-50.0;2, 3, 4;solid;metallic;1204.0;3563.0;6.64;lanthanoid;
+75;Re;Rhenium;1925;186.207(1);[Xe] 4f14 5d5 6s2;1.9;159.0;63 (+4);760.0;-15.0;-3, -1, 1, 2, 3, 4, 5, 6, 7;solid;metallic;3459.0;5869.0;21.02;transition metal;
+113;Nh;Nihonium;2003;[284];[Rn] 5f14 6d10 7s2 7p1;;;;;;;;;;;;post-transition metal;
+110;Ds;Darmstadtium;1994;[281];[Rn] 5f14 6d9 7s1;;;;;;;;;;;;transition metal;
+31;Ga;Gallium;1875;69.723(1);[Ar] 3d10 4s2 4p1;1.81;126.0;62 (+3);579.0;-29.0;1, 2, 3;solid;metallic;303.0;2477.0;5.904;metal;187
+74;W;Tungsten;1783;183.84(1);[Xe] 4f14 5d4 6s2;2.36;146.0;66 (+4);770.0;-79.0;-2, -1, 1, 2, 3, 4, 5, 6;solid;metallic;3695.0;5828.0;19.25;transition metal;
+84;Po;Polonium;1898;[209];[Xe] 4f14 5d10 6s2 6p4;2.0;;94 (+4);812.0;-183.0;-2, 2, 4, 6;solid;metallic;527.0;1235.0;9.196;metalloid;
+28;Ni;Nickel;1751;58.6934(4);[Ar] 3d8 4s2;1.9100000000000001;121.0;69 (+2);737.0;-112.0;-1, 1, 2, 3, 4;solid;metallic;1728.0;3186.0;8.908;transition metal;163
+43;Tc;Technetium;1937;[98];[Kr] 4d5 5s2;1.9;156.0;64.5 (+4);702.0;-53.0;-3, -1, 1, 2, 3, 4, 5, 6, 7;solid;metallic;2430.0;4538.0;11.5;transition metal;
+24;Cr;Chromium;;51.9961(6);[Ar] 3d5 4s1;1.6600000000000001;127.0;80 (+2*);653.0;-64.0;-2, -1, 1, 2, 3, 4, 5, 6;solid;metallic;2180.0;2944.0;7.14;transition metal;
+78;Pt;Platinum;;195.084(9);[Xe] 4f14 5d9 6s1;2.2800000000000002;128.0;86 (+2);870.0;-205.0;2, 4, 5, 6;solid;metallic;2041.0;4098.0;21.09;transition metal;175
+69;Tm;Thulium;1879;168.93421(2);[Xe] 4f13 6s2;1.25;;103 (+2);597.0;-50.0;2, 3;solid;metallic;1818.0;2223.0;9.321;lanthanoid;
+89;Ac;Actinium;1899;[227];[Rn] 6d1 7s2;1.1;;112 (+3);499.0;;3;solid;metallic;1323.0;3473.0;10.07;actinoid;
+85;At;Astatine;1940;[210];[Xe] 4f14 5d10 6s2 6p5;2.2;;62 (+7);920.0;-270.0;-1, 1, 3, 5;solid;covalent network;575.0;;;halogen;
+106;Sg;Seaborgium;1974;[271];[Rn] 5f14 6d4 7s2;;;;;;;;;;;;transition metal;
+19;K;Potassium;1807;39.0983(1);[Ar] 4s1;0.8200000000000001;196.0;138 (+1);419.0;-48.0;1;solid;metallic;337.0;1032.0;0.856;alkali metal;275
+44;Ru;Ruthenium;1827;101.07(2);[Kr] 4d7 5s1;2.2;126.0;68 (+3);710.0;-101.0;-2, 1, 2, 3, 4, 5, 6, 7, 8;solid;metallic;2607.0;4423.0;12.37;transition metal;
+51;Sb;Antimony;;121.760(1);[Kr] 4d10 5s2 5p3;2.05;138.0;76 (+3);834.0;-103.0;-3, 3, 5;solid;metallic;904.0;1860.0;6.697;metalloid;
+70;Yb;Ytterbium;1878;173.054(5);[Xe] 4f14 6s2;1.1;;102 (+2);603.0;-50.0;2, 3;solid;metallic;1092.0;1469.0;6.57;lanthanoid;
+60;Nd;Neodymium;1885;144.242(3);[Xe] 4f4 6s2;1.1400000000000001;;129 (+2);533.0;-50.0;2, 3;solid;metallic;1294.0;3373.0;7.01;lanthanoid;
+93;Np;Neptunium;1940;[237];[Rn] 5f4 6d1 7s2;1.3599999999999999;;110 (+2);605.0;;3, 4, 5, 6, 7;solid;metallic;917.0;4273.0;20.45;actinoid;
+107;Bh;Bohrium;1976;[272];[Rn] 5f14 6d5 7s2;;;;;;;;;;;;transition metal;
+9;F;Fluorine;1670;18.9984032(5);[He] 2s2 2p5;3.98;71.0;133 (-1);1681.0;-328.0;-1;gas;atomic;54.0;85.0;0.001696;halogen;147
+41;Nb;Niobium;1801;92.90638(2);[Kr] 4d4 5s1;1.6;137.0;72 (+3);652.0;-86.0;-1, 2, 3, 4, 5;solid;metallic;2750.0;5017.0;8.57;transition metal;
+64;Gd;Gadolinium;1880;157.25(3);[Xe] 4f7 5d1 6s2;1.2;;93.8 (+3);593.0;-50.0;1, 2, 3;solid;metallic;1586.0;3523.0;7.901;lanthanoid;
+88;Ra;Radium;1898;[226];[Rn] 7s2;0.9;;148 (+2);509.0;;2;solid;metallic;973.0;2010.0;5.0;alkaline earth metal;
+99;Es;Einsteinium;1952;[252];[Rn] 5f11 7s2;1.3;;;619.0;;2, 3;solid;;1133.0;;;actinoid;
+11;Na;Sodium;1807;22.98976928(2);[Ne] 3s1;0.93;154.0;102 (+1);496.0;-53.0;-1, 1;solid;metallic;371.0;1156.0;0.968;alkali metal;227
+2;He;Helium;1868;4.002602(2);1s2;;32.0;;2372.0;0.0;;gas;atomic;;4.0;0.0001785;noble gas;140
+115;Mc;Moscovium;2003;[288];[Rn] 5f14 6d10 7s2 7p3;;;;;;;;;;;;post-transition metal;
+20;Ca;Calcium;;40.078(4);[Ar] 4s2;1.0;174.0;100 (+2);590.0;-2.0;2;solid;metallic;1115.0;1757.0;1.55;alkaline earth metal;
+40;Zr;Zirconium;1789;91.224(2);[Kr] 4d2 5s2;1.33;148.0;72 (+4);640.0;-41.0;1, 2, 3, 4;solid;metallic;2128.0;4682.0;6.511;transition metal;
+87;Fr;Francium;1939;[223];[Rn] 7s1;0.7000000000000001;;180 (+1);380.0;;1;solid;metallic;;;;alkali metal;
+111;Rg;Roentgenium;1994;[280];[Rn] 5f14 6d10 7s1;;;;;;;;;;;;transition metal;
+10;Ne;Neon;1898;20.1797(6);[He] 2s2 2p6;;69.0;;2081.0;0.0;;gas;atomic;25.0;27.0;0.0009000000000000001;noble gas;154
+73;Ta;Tantalum;1802;180.94788(2);[Xe] 4f14 5d3 6s2;1.5;138.0;72 (+3);761.0;-31.0;-1, 2, 3, 4, 5;solid;metallic;3290.0;5731.0;16.65;transition metal;
+65;Tb;Terbium;1843;158.92535(2);[Xe] 4f9 6s2;1.2;;92.3 (+3);566.0;-50.0;1, 3, 4;solid;metallic;1629.0;3503.0;8.219;lanthanoid;
+22;Ti;Titanium;1791;47.867(1);[Ar] 3d2 4s2;1.54;136.0;86 (+2);659.0;-8.0;-1, 2, 3, 4;solid;metallic;1941.0;3560.0;4.507;transition metal;
+23;V;Vanadium;1803;50.9415(1);[Ar] 3d3 4s2;1.63;125.0;79 (+2);651.0;-51.0;-1, 2, 3, 4;solid;metallic;2183.0;3680.0;6.11;transition metal;
+4;Be;Beryllium;1798;9.012182(3);[He] 2s2;1.57;90.0;45 (+2);900.0;0.0;2;solid;metallic;1560.0;2743.0;1.8479999999999999;alkaline earth metal;
+97;Bk;Berkelium;1949;[247];[Rn] 5f9 7s2;1.3;;96 (+3);601.0;;3, 4;solid;metallic;1323.0;;14.78;actinoid;
+102;No;Nobelium;1957;[259];[Rn] 5f14 7s2;1.3;;;642.0;;2, 3;;;1100.0;;;actinoid;
+112;Cn;Copernicium;1996;[285];[Rn] 5f14 6d10 7s2;;;;;;;;;;;;transition metal;
+118;Og;Oganesson;2002;[294];[Rn] 5f14 6d10 7s2 7p6;;;;;;;;;;;;noble gas;
+7;N;Nitrogen;1772;14.0067(2);[He] 2s2 2p3;3.04;75.0;146 (-3);1402.0;-7.0;-3, -2, -1, 1, 2, 3, 4, 5;gas;diatomic;63.0;77.0;0.001251;nonmetal;155
+14;Si;Silicon;1854;28.0855(3);[Ne] 3s2 3p2;1.9;111.0;40 (+4);787.0;-134.0;-4, -3, -2, -1, 1, 2, 3, 4;solid;metallic;1687.0;3173.0;2.33;metalloid;210
+12;Mg;Magnesium;1808;24.3050(6);[Ne] 3s2;1.31;130.0;72 (+2);738.0;0.0;1, 2;solid;metallic;923.0;1363.0;1.738;alkaline earth metal;173
+1;H;Hydrogen;1766;1.00794(4);1s1;2.2;37.0;;1312.0;-73.0;-1, 1;gas;diatomic;14.0;20.0;8.99e-05;nonmetal;120
+26;Fe;Iron;;55.845(2);[Ar] 3d6 4s2;1.83;125.0;78 (+2*);763.0;-16.0;-2, -1, 1, 2, 3, 4, 5, 6;solid;metallic;1811.0;3134.0;7.874;transition metal;
+36;Kr;Krypton;1898;83.798(2);[Ar] 3d10 4s2 4p6;;110.0;;1351.0;0.0;2;gas;atomic;116.0;120.0;0.0037500000000000003;noble gas;202
+68;Er;Erbium;1842;167.259(3);[Xe] 4f12 6s2;1.24;;89 (+3);589.0;-50.0;3;solid;metallic;1770.0;3141.0;9.066;lanthanoid;
+100;Fm;Fermium;1952;[257];[Rn] 5f12 7s2;1.3;;;627.0;;2, 3;;;1800.0;;;actinoid;
+25;Mn;Manganese;1774;54.938045(5);[Ar] 3d5 4s2;1.55;139.0;67 (+2);717.0;0.0;-3, -2, -1, 1, 2, 3, 4, 5, 6, 7;solid;metallic;1519.0;2334.0;7.47;transition metal;
+18;Ar;Argon;1894;39.948(1);[Ne] 3s2 3p6;;97.0;;1521.0;0.0;;gas;atomic;84.0;87.0;0.001784;noble gas;188
+54;Xe;Xenon;1898;131.293(6);[Kr] 4d10 5s2 5p6;;130.0;48 (+8);1170.0;0.0;2, 4, 6, 8;gas;atomic;161.0;165.0;0.0059;noble gas;216
+15;P;Phosphorus;1669;30.973762(2);[Ne] 3s2 3p3;2.19;106.0;44 (+3);1012.0;-72.0;-3, -2, -1, 1, 2, 3, 4, 5;solid;covalent network;317.0;554.0;1.823;nonmetal;180
+114;Fl;Flerovium;1998;[289];[Rn] 5f14 6d10 7s2 7p2;;;;;;;;;;;;post-transition metal;

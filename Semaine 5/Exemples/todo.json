@@ -1,0 +1,21 @@
+{
+  "taches": [
+    {
+      "id": 1,
+      "description": "Implémenter la vue",
+      "completee": false
+    },
+    {
+      "id": 2,
+      "description": "Implémenter le contrôleur",
+      "completee": false
+    },
+    {
+      "id": 3,
+      "description": "Implémenter le modèle",
+      "completee": false
+    }
+
+  ]
+
+}
