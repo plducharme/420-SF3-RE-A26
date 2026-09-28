@@ -1,5 +1,6 @@
 import csv
 
+
 class ElementTableauPeriodique:
 
     def __init__(self, numero_atomique: int, symbole: str, nom: str, annee_decouverte: int, masse_atomique: float):
@@ -83,7 +84,6 @@ class ElementTableauPeriodique:
             writer = csv.DictWriter(fichier, fieldnames=["Atomic Number", "Symbol", "Name", "Year Discovered", "Atomic Mass"], delimiter=";")
             writer.writeheader()
             writer.writerows(elements_dicts)
-
 
 
 if __name__ == "__main__":

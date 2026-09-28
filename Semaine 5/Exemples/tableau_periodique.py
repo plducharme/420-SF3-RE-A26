@@ -10,7 +10,7 @@ class TableauPeriodique(QMainWindow):
         super().__init__()
 
         self.setWindowTitle("Élements du tableau périodique")
-        self.setWindowIcon(QIcon("./images/chemistry.png"))
+        self.setWindowIcon(QIcon("./images/element.png"))
 
         cadre_principal = QFrame()
         self.setCentralWidget(cadre_principal)
@@ -152,6 +152,7 @@ class TableauPeriodique(QMainWindow):
         self.elements_modifiee = True
         element = ElementTableauPeriodique(int(self.numero_edit.text()), self.symbole_edit.text(), self.libelle_nom.text(), int(self.edit_annee_decouverte.text()), float(self.edit_masse_atomique.text()))
         self.elements_tableau[self.elements_tableau_index] = element
+
 
 app = QApplication()
 tp = TableauPeriodique()

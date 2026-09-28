@@ -96,7 +96,8 @@ class GestionnaireTache(QMainWindow):
         self.bouton_precedent.setEnabled(True)
 
     def action_ouvrir_triggered(self):
-        chemin, filtre = QFileDialog.getOpenFileName(parent=self, caption="Choisir le json", dir=".", filter="fichier json (*.json)")
+        chemin, filtre = QFileDialog.getOpenFileName(parent=self, caption="Choisir le json", dir=".",
+                                                     filter="fichier json (*.json)")
 
         if chemin:
             self.liste_todos = ToDo.charger_donnees(chemin)

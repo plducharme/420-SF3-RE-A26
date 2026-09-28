@@ -35,7 +35,6 @@ class ToDo:
     def __repr__(self):
         return f"TODO[id: {self.__id}, description: \"{self.__description}\", complétée: {self.__completee}]"
 
-
     @staticmethod
     def charger_donnees(chemin: str):
         with open(chemin, mode="r", encoding="utf8") as fichier:
@@ -58,6 +57,6 @@ class ToDo:
 
 
 if __name__ == "__main__":
-    donnees = ToDo.charger_donnees()
+    donnees = ToDo.charger_donnees("./todo.json")
     print(donnees)
 
