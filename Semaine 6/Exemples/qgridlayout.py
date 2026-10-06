@@ -1,4 +1,5 @@
-from PySide6.QtWidgets import QGridLayout, QApplication, QMainWindow, QPushButton, QWidget, QLabel
+from PySide6.QtWidgets import QGridLayout, QApplication, QMainWindow, QPushButton, QWidget, QLabel, QFrame
+from PySide6.QtCore import Qt
 
 
 class FenetrePrincipale(QMainWindow):
@@ -17,20 +18,33 @@ class FenetrePrincipale(QMainWindow):
                 disposition_grid.addWidget(bouton, i, j)
 
         label_colonne = QLabel("Sur deux colonnes")
+        label_colonne.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        label_colonne.setFrameStyle(QFrame.Shape.StyledPanel | QFrame.Shadow.Sunken)
         # addWidget(widget, row, column, rowspan, colspan)
         # row: index de la ligne
         # column: index de la colonne
         # rowspan: sur combien de lignes doit d'étendre le widget, défaut 1
         # colspan: sur combien de colonne doit s'étendre le widget, défaut 1
         disposition_grid.addWidget(label_colonne, 4, 0, 1, 2)
+
         label_ligne = QLabel("Sur deux lignes")
+        label_ligne.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        label_ligne.setFrameStyle(QFrame.Shape.StyledPanel | QFrame.Shadow.Sunken)
         disposition_grid.addWidget(label_ligne, 4, 2, 2, 1)
+
         label_seul = QLabel("(4, 3)")
+        label_seul.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        label_seul.setFrameStyle(QFrame.Shape.StyledPanel | QFrame.Shadow.Sunken)
         disposition_grid.addWidget(label_seul, 4, 3)
+
         label_50 = QLabel("(5, 0)")
         disposition_grid.addWidget(label_50, 5, 0)
+
         label_51 = QLabel("(5, 1)")
         disposition_grid.addWidget(label_51, 5, 1)
+
+        # Remarquez l'emplacement vide à ligne 5, colonne 3
+
         self.setCentralWidget(widget_central)
 
 

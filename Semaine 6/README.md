@@ -3,7 +3,7 @@
 ## Recréer l'interface d'un jeu de Roche, Papier, Ciseaux
 1) Recréer l'interface ci-dessous avec les divers gestionnaires de géométrie (layouts) dans la classe
 RochePapierCiseaux(QMainWindow)
-   1) L'interface est constitué
+   1) L'interface est constituée
       1) d'une section pour le joueur humain 
       2) d'une section pour la table de jeu
          1) Contient le score pour l'humain et le cpu (QLabel)

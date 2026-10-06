@@ -1,4 +1,5 @@
-from PySide6.QtWidgets import QApplication, QFrame, QVBoxLayout, QStackedLayout, QComboBox, QLabel, QPushButton
+from PySide6.QtWidgets import QApplication, QFrame, QVBoxLayout, QStackedLayout, QComboBox, QLabel, QPushButton, \
+    QMessageBox
 from PySide6.QtCore import Qt
 
 
@@ -36,9 +37,13 @@ class QStackedLayoutEx(QFrame):
         self.disposition_empilee.addWidget(bouton_1)
         self.choix_page_combo.addItem("Bouton 1")
         # Comme les layouts sont empilés, les autres libellés ne pourront être plus petit que la grandeur du bouton
-        bouton_1.setMinimumSize(500, 500)
+        bouton_1.setMinimumSize(300, 300)
+        bouton_1.clicked.connect(self.bouton_1_clicked)
 
         self.disposition_verticale.addLayout(self.disposition_empilee)
+
+    def bouton_1_clicked(self):
+        QMessageBox.information(self, "Bouton 1", "Bouton 1 cliqué")
 
 
 app = QApplication()

@@ -150,7 +150,6 @@ class DemineurJeu:
     def cases_decouvertes(self, nombre: int):
         self.__cases_decouvertes = nombre
 
-
     def creer_jeu(self):
 
         for i in range(self.hauteur):
