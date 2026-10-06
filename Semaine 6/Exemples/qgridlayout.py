@@ -18,6 +18,10 @@ class FenetrePrincipale(QMainWindow):
 
         label_colonne = QLabel("Sur deux colonnes")
         # addWidget(widget, row, column, rowspan, colspan)
+        # row: index de la ligne
+        # column: index de la colonne
+        # rowspan: sur combien de lignes doit d'étendre le widget, défaut 1
+        # colspan: sur combien de colonne doit s'étendre le widget, défaut 1
         disposition_grid.addWidget(label_colonne, 4, 0, 1, 2)
         label_ligne = QLabel("Sur deux lignes")
         disposition_grid.addWidget(label_ligne, 4, 2, 2, 1)

@@ -2,13 +2,14 @@ from random import Random
 
 from PySide6.QtGui import QPixmap
 from PySide6.QtWidgets import QApplication, QMainWindow, QWidget, QHBoxLayout, QVBoxLayout, QLabel, QPushButton
+from PySide6.QtCore import Qt, QSize
 
 
 class Joueur:
-    def __init__(self, nom, isCpu: bool):
+    def __init__(self, nom, is_cpu: bool):
         self.nom = nom
         self.score = 0
-        self.isCpu = isCpu
+        self.isCpu = is_cpu
 
 
 class RochePapierCiseau(QMainWindow):
@@ -59,6 +60,7 @@ class RochePapierCiseau(QMainWindow):
 
         self.score_humain_score = QLabel("0")
         self.score_cpu_score = QLabel("0")
+        self.score_cpu_score.setAlignment(Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter)
 
         hbox = QHBoxLayout()
         hbox.addWidget(self.score_humain_score)
@@ -67,17 +69,22 @@ class RochePapierCiseau(QMainWindow):
         disposition.addLayout(hbox)
 
         self.choix_humain = QLabel("Choix Humain")
+        self.choix_humain.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.choix_cpu = QLabel("Choix CPU")
+        self.choix_cpu.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
         disposition.addWidget(self.choix_humain)
         disposition.addWidget(self.choix_cpu)
+        self.setFixedSize(QSize(270, 145))
 
         return disposition
 
     # Créer la disposition pour un joueur
     def creer_disposition_joueur(self, joueur: Joueur) -> QVBoxLayout:
         disposition = QVBoxLayout()
-        disposition.addWidget(QLabel(joueur.nom))
+        label_nom_joueur = QLabel(joueur.nom)
+        label_nom_joueur.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        disposition.addWidget(label_nom_joueur)
         roche_bouton = QPushButton("Roche")
         papier_bouton = QPushButton("Papier")
         ciseaux_bouton = QPushButton("Ciseaux")
@@ -116,7 +123,7 @@ class RochePapierCiseau(QMainWindow):
 
     # Lorsque l'utilisateur fait un choix, on génère un choix pour le CPU et on résout le jeu
     def choix_humain_clicked(self):
-        bouton = self.sender()
+        bouton: QPushButton = self.sender()
         choix_humain = bouton.text()
         # On génère un choix pour le CPU
         # Remarquer comment on utilise la méthode statique

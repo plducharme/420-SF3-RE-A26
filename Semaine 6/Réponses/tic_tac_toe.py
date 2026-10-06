@@ -1,6 +1,8 @@
 from PySide6.QtWidgets import QMainWindow, QWidget, QVBoxLayout, QHBoxLayout, QPushButton, QLabel, QGridLayout, \
     QApplication, QDialog
+from PySide6.QtCore import QSize
 from collections import deque
+
 
 class TicTacToe(QMainWindow):
 
@@ -17,7 +19,11 @@ class TicTacToe(QMainWindow):
         for ligne in range(3):
             for colonne in range(3):
                 bouton = QPushButton()
+                # On lui donne un nom d'objet basé sur sa localisation pour l'identifier lorsque cliqué
                 bouton.setObjectName(f"bouton_{ligne}_{colonne}")
+                # On spécifie des grandeurs pour éviter le changement de grandeurs des boutons lorsque l'on change le
+                # texte. On pourrait mettre le texte à " "
+                bouton.setFixedSize(QSize(64, 64))
                 disposition_jeu.addWidget(bouton, ligne, colonne)
                 bouton.clicked.connect(self.bouton_clicked)
 
@@ -26,7 +32,7 @@ class TicTacToe(QMainWindow):
     # lorsqu'un des boutons est cliqué, cette méthode est appelée
     def bouton_clicked(self):
         # On va chercher le bouton qui a été cliqué
-        bouton = self.sender()
+        bouton: QPushButton = self.sender()
         nom_bouton = bouton.objectName()
 
         # extraire les coordonnées du bouton
