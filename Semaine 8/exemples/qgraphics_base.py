@@ -1,14 +1,14 @@
 from PySide6.QtCore import QPoint
-from PySide6.QtWidgets import QApplication, QGraphicsView, QGraphicsScene, QGraphicsPixmapItem
-from PySide6.QtGui import QPen, QBrush, QColor, QPixmap
-from PySide6.QtCore import Qt
+from PySide6.QtWidgets import QApplication, QGraphicsView, QGraphicsScene, QGraphicsPixmapItem, QGraphicsTextItem
+from PySide6.QtGui import QPen, QBrush, QColor, QPixmap, QFont
+from PySide6.QtCore import Qt, QRect
 
 
 class GraphicsBase(QGraphicsView):
 
     def __init__(self):
         super().__init__()
-        self.scene = QGraphicsScene(0, 0, 400, 400)
+        self.scene = QGraphicsScene(QRect(0, 0, 400, 400))
         # notre classe hérite du QGraphicsView, on lui assigne la scene créée
         self.setScene(self.scene)
 
@@ -23,8 +23,13 @@ class GraphicsBase(QGraphicsView):
 
         graphics_pixmap = QGraphicsPixmapItem(pix)
         graphics_pixmap.setPos(QPoint(90, 90))
-
-        self.scene.addText("Texte en deux dimensions")
+        # Les addQuelqueChose() ajoute à la scène et retourne l'objet ajouté
+        texte: QGraphicsTextItem = self.scene.addText("Texte en deux dimensions")
+        police = QFont()
+        police.setBold(True)
+        texte.setFont(police)
+        texte.setPos(QPoint(100, 300))
+        # addItem(QGraphicsItem) ajoute un QGraphics Item déjà défini
         self.scene.addItem(graphics_pixmap)
 
 

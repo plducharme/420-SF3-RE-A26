@@ -16,6 +16,7 @@ class PixmapAnimator(QObject):
         self.anim.setDuration(duration)
         self.anim.setEasingCurve(QEasingCurve(easing))
         self.anim.valueChanged.connect(self._on_value)
+        # Le nombre de fois que l'animation sera exécutée, -1 = infini
         self.anim.setLoopCount(-1 if loop else 1)
 
     def _on_value(self, v):
@@ -74,6 +75,7 @@ class FenetreAnimation(QMainWindow):
             elif self.animator.anim.state() == self.animator.anim.State.Paused:
                 self.animator.resume()
         else:
+            # Pour les touches non gérées, on appelle la méthode de la superclasse (comportement par défaut)
             super().keyPressEvent(event)
 
 

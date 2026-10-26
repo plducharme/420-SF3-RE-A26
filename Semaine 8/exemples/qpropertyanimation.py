@@ -18,8 +18,10 @@ class BoutonAnime(QWidget):
         # Créer l'animation sur le widget_enfant pour la propriété "pos";
         # remarquez que le cast de la string en "bytes string"
         self.animation = QPropertyAnimation(widget_enfant, b"pos")
+        # pos est un QPoint
         self.animation.setStartValue(QPoint(10, 10))
         self.animation.setEndValue(QPoint(500, 500))
+        # La durée en millisecondes
         self.animation.setDuration(2000)
         self.animation.start()
 

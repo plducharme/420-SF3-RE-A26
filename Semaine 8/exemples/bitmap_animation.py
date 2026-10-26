@@ -12,6 +12,7 @@ class BitmapAnimation(QMainWindow):
         widget_central.setLayout(self.disposition)
 
         self.etiquette = QLabel()
+        # On se déclare un canevas de 800 x 500
         self.canevas = QPixmap(800, 500)
         self.canevas.fill(QColorConstants.White)
         self.etiquette.setPixmap(self.canevas)
