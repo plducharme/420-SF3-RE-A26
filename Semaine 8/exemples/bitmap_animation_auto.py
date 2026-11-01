@@ -36,7 +36,9 @@ class BitmapAnimationAuto(QMainWindow):
         self.index_image = 0
 
         self.image_animee = None
+        # On créé un timer qui émettra un signal de timeout après le temps configuré
         self.timer = QTimer()
+        # On le connecte à la méthode qui sera constament rappelée
         self.timer.timeout.connect(self.animer)
 
         self.setCentralWidget(widget_central)
@@ -47,7 +49,8 @@ class BitmapAnimationAuto(QMainWindow):
         if self.timer.isActive():
             self.timer.stop()
         else:
-            self.timer.start(1000 / 24)
+            # Le timer émettra le signal "timeout" à chaque nombre de millisecondes spécifié
+            self.timer.start(42)
 
     def animer(self):
         self.image_animee.dessiner(self.index_image)
