@@ -30,7 +30,7 @@ class Fenetre(QFrame):
         self.disposition.addWidget(self.bouton_1)
 
         self.bouton_2 = QPushButton("Bouton 2")
-        self.bouton_2.setObjectName("Mega Bouton 2")
+        self.bouton_2.setObjectName("Méga Bouton 2")
         self.bouton_2.setMinimumSize(QSize(150, 75))
         self.bouton_2.clicked.connect(self.envoyer_evenement)
         self.disposition.addWidget(self.bouton_2)
