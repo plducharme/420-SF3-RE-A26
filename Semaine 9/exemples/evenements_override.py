@@ -27,6 +27,14 @@ class EvenementsDemo(QFrame):
             # On appelle la méthode parente pour gérer les autres boutons normalement
             super().mousePressEvent(event)
 
+    # Événement déclenché lorsqu'une touche de clavier est relâché
+    def keyReleaseEvent(self, event, /):
+        if event.key() == Qt.Key.Key_C:
+            self.compteur += 2
+            self.libelle.setText(str(self.compteur))
+
+        super().keyReleaseEvent(event)
+
 
 app = QApplication()
 fenetre = EvenementsDemo()

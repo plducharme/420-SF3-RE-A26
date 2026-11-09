@@ -87,7 +87,7 @@ class BombardierJeu:
             self.scene.addItem(self.bombe)
 
     def verifier_collision(self):
-        if self.bombe and self.bombe.collidesWithItem(self.cible):
+        if self.bombe is not None and self.bombe.collidesWithItem(self.cible):
             self.etat = BombardierJeu.ETAT_GAGNE
 
     def mise_a_jour_jeu(self):

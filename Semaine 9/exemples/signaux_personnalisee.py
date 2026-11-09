@@ -13,6 +13,7 @@ class Fenetre(QMainWindow):
         self.etiquette = QLabel("")
         self.mon_line_edit = MonQLineEdit()
         # Connecte le signal personalisé à une méthode
+        # Le signale de MonQLineEdit est émis lorsque l'on appelle la méthode setText(str)
         self.mon_line_edit.mon_signal.connect(self.mon_signal_declenche)
         bouton_test = QPushButton("Test")
         bouton_test.clicked.connect(self.bouton_clicked)
@@ -27,7 +28,7 @@ class Fenetre(QMainWindow):
 
     # Utiliser un bouton pour appeler le setText() du MonQLineEdit qui déclenchera le signal "monSignal"
     def bouton_clicked(self):
-        self.mon_line_edit.setText("Ceci est un test")
+        self.mon_line_edit.setText(self.mon_line_edit.text())
 
 
 # Un widget personnalisé qui va envoyer le signal personnalisé lorsque le setText() est appelé
