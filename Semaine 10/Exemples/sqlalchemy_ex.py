@@ -86,7 +86,7 @@ stmt = select(User).where(User.name.in_(["spongebob", "sandy"]))
 for user in session.scalars(stmt):
     print(user)
 
-# Select avec jointure
+# Select avec jointure (quand on joint deux tables sur des valeurs pour faire comme si l'on cherchait dans une table
 stmt = (
     select(Address)
     .join(Address.user)

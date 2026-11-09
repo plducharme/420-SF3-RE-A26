@@ -3,6 +3,7 @@
 2) Utilisez PyCharm pour créer une BD sqlite et importer le data des csv
    - Utilisez la vue Database de PyCharm pour créer et importer
 3) Créez un module sqlalchemy correspondant pour intéragir à la BD sqlite
+   - Alternativement, utiliser Pandas pour se connecter à la BD et aller chercher tous les enregistrements 
 4) Créer une application PySide6
    - Un menu ``Fichier``
      - Exporter graphique en PDF

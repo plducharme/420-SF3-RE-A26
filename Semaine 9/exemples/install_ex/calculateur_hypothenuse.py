@@ -33,7 +33,7 @@ class CalculateurHypothenuse(QFrame):
     def calcul_hypo(self):
         if len(self.input_adjacent.text()) > 0 and len(self.input_oppose.text()):
             self.label_resultat.setText(
-                str(np.linalg.norm([int(self.input_adjacent.text()), int(self.input_oppose.text())])))
+                str(np.linalg.norm([float(self.input_adjacent.text()), float(self.input_oppose.text())])))
 
 
 app = QApplication()
