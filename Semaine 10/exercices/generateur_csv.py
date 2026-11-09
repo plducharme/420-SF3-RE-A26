@@ -2,8 +2,9 @@ from datetime import datetime, timedelta
 import math
 import random
 
-# compléter/modifier le code pour créer un csv: "airdata-{date}.csv"
-
+# compléter/modifier le code pour créer 3 csv: "airdata-{date}.csv"
+# Nom des entêtes csv:
+# timestamp,temperature_c,humidity_pct,co2_ppm,voc_ppb,radon_bq_m3,pm25_ug_m3,pressure_hpa
 start = datetime(2026, 11, 9)
 
 
@@ -32,5 +33,5 @@ for i in range(288):  # 24h x 12 mesures/h
     print(
         f"{t:%Y-%m-%dT%H:%M:%SZ},"
         f"{temperature},{humidite},{co2},{tvoc},"
-        f"{radon},{pm25},{pressure}"
+        f"{radon},{pm25},{pression}"
     )
