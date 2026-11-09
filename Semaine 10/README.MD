@@ -9,7 +9,7 @@
      - Exporter graphique en PDF
      - Quitter
    - Une barre d'outils contenant les actions
-   - L'application devra utiliser l'ORM pour intéragir avec la BD
+   - L'application devra utiliser l'ORM ou Pandas pour intéragir avec la BD
    - Une interface contenant
      - un ``QCalendarWidget`` permettant de choisir une journée
        - utiliser ``setDateRange()`` ou ``minimumDate`` et ``maximumDate`` 
