@@ -5,6 +5,7 @@ from pymongo.synchronous.cursor import Cursor
 from pymongo.synchronous.collection import Collection
 from datetime import datetime
 
+
 class SuperChat(QFrame):
 
     def __init__(self):
@@ -12,6 +13,7 @@ class SuperChat(QFrame):
 
         self.disposition = QVBoxLayout()
         self.setLayout(self.disposition)
+        self.setWindowTitle("SuperChat 2026")
 
         self.disposition_nom = QHBoxLayout()
         self.label_nom = QLabel("Nom:")
@@ -31,8 +33,15 @@ class SuperChat(QFrame):
         self.input_message = QLineEdit()
         self.bouton_envoyer = QPushButton("Envoyer")
         self.bouton_envoyer.clicked.connect(self.bouton_envoyer_clicked)
+        self.bouton_lol = QPushButton("\U0001F923")
+        self.bouton_lol.clicked.connect(self.bouton_lol_clicked)
+        self.bouton_zany = QPushButton("\U0001F92A")
+        self.bouton_zany.clicked.connect(self.bouton_zany_clicked)
+
         self.disposition_message = QHBoxLayout()
         self.disposition_message.addWidget(self.input_message)
+        self.disposition_message.addWidget(self.bouton_lol)
+        self.disposition_message.addWidget(self.bouton_zany)
         self.disposition_message.addWidget(self.bouton_envoyer)
         self.disposition.addLayout(self.disposition_message)
 
@@ -78,14 +87,23 @@ class SuperChat(QFrame):
         msg = self.input_message.text()
         doc = self.creer_message(self.nom, msg, datetime.now())
         self.collection_bd.insert_one(doc)
+        self.input_message.clear()
 
     def recevoir_message(self):
-        filtre = {"date": {"$gt": f"{self.dernier_message}"}}
-        messages = self.collection_bd.find(filter=filtre)
+        # filtre = {"date": {"$gt": f"{self.dernier_message}"}}
+        messages = self.collection_bd.find()
+        self.log_chat.clear()
         for message in messages:
             self.log_chat.append(f"{message["nom"]}: {message["message"]}")
         self.dernier_message = datetime.now()
 
+    def bouton_lol_clicked(self):
+        message = self.creer_message(self.nom, "\U0001F923", datetime.now())
+        self.collection_bd.insert_one(message)
+
+    def bouton_zany_clicked(self):
+        message = self.creer_message(self.nom, "\U0001F92A", datetime.now())
+        self.collection_bd.insert_one(message)
 
 
 app = QApplication()
