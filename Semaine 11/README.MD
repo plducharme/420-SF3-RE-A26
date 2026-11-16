@@ -9,10 +9,10 @@ Pour faire l'exercice plus bas, vous avez le choix entre utiliser MongoDB via At
 3) Sous "Security->Quickstart", créer un user/pwd (ne pas oublier de copier le mot de passe)
 4) Sous "Security->Network Access", utiliser le bouton pour ajouter son adresse ip
    1) Le serveur accepte seulement les connexions des adresses ip listées
-5) Sous "Deployment->Database", cliquer "Browse Collections"  
+5) Sous "Database->Clusters", cliquer "Browse Collections"  
 ![Browse Collection](./browse.png)
-6) Sous "Deployment->Database", cliquer "connect" et choisir Python, vous aller pouvoir copier la chaîne de connexion (connexion string)
-  1) Il vous restera seulement à remplacer le mot de passe dans la chaîne
+6) Sous "Database->Clusters", cliquer "connect" et choisir Python, vous allez pouvoir copier la chaîne de connexion (connexion string)
+  1) Il vous restera seulement à remplacer l'usage et le mot de passe dans la chaîne
 7) "Create database", créer une base de donnée "GestionMusique"
 8) Créer une collection "Albums"
 9) Regarder le code d'exemple pour se connecter avec pymongo

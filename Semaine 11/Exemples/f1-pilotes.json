@@ -1,0 +1,41 @@
+{
+  "pilotes": [
+    {
+      "_id": 1,
+      "prénom": "George",
+      "nom": "Russell",
+      "ecurie_id": 1
+    },
+    {
+      "_id": 2,
+      "prénom": "Kimi",
+      "nom": "Antonelli",
+      "ecurie_id": 1
+    },
+    {
+      "_id": 3,
+      "prénom": "Charles",
+      "nom": "Leclerc",
+      "ecurie_id": 2
+    },
+    {
+      "_id": 4,
+      "prénom": "Lewis",
+      "nom": "Hamilton",
+      "ecurie_id": 2
+    },
+    {
+      "_id": 5,
+      "prénom": "Lando",
+      "nom": "Norris",
+      "ecurie_id": 3
+    },
+    {
+      "_id": 6,
+      "prénom": "Oscar",
+      "nom": "Piastri",
+      "ecurie_id": 3
+    }
+  ]
+
+}

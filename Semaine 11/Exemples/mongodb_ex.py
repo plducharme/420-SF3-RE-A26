@@ -2,6 +2,7 @@ import pymongo.server_api
 from PySide6.QtWidgets import QApplication, QMainWindow, QWidget, QPushButton, QTextEdit, QVBoxLayout
 from pymongo import MongoClient
 import json
+from urllib.parse import quote_plus
 
 
 class MongoExemple(QMainWindow):
@@ -26,7 +27,7 @@ class MongoExemple(QMainWindow):
         self.mongo_client.find({"annee_debut": {"$lt": 2010}}, "nom")
         self.mongo_client.supprimer_un({"nom": "Code Monkeys"})
         # Si on passe un dictionnaire vide, il n'y a pas de critères, donc tout est supprimé
-        self.mongo_client.supprimer_plusieurs({})
+        # self.mongo_client.supprimer_plusieurs({})
 
 
 class MongoTestClient:
@@ -35,9 +36,12 @@ class MongoTestClient:
         configs = MongoTestClient.charger_configs()
         # Créer la chaîne de connexion
         # Vous pouvez la remplacer par celle provenant de la console Atlas (cluster -> connect -> drivers)
-        adresse_connexion = ("mongodb+srv://"+configs['user']+":" + configs['password'] +
+        user = quote_plus(configs["user"])
+        password = quote_plus(configs['password'])
+        adresse_connexion = ("mongodb+srv://"+user+":" + password +
                              configs["server"] + "/?retryWrites=true&w=majority")
         # adresse_connexion = "mongodb+srv://dutch80:<db_password>@testcluster.va4xpjo.mongodb.net/?appName=testcluster"
+        print(adresse_connexion)
         self.client = MongoClient(adresse_connexion, server_api=pymongo.server_api.ServerApi('1'))
         # Se connecter à la BD
         self.db = self.client['ContenuSurDemande']
@@ -56,7 +60,7 @@ class MongoTestClient:
             "annee_fin": 2013,
             "comediens": [{"nom": "O'Dowd", "prenom": "Chris"}, {"nom": "Ayoade", "prenom": "Richard"}]
         }
-        # L'insertion retourn un objet InsertOneResult contenant l'id généré
+        # L'insertion retourne un objet InsertOneResult contenant l'id généré
         resultat = self.collection.insert_one(document)
         self.append_texte("Id insert_one " + str(resultat.inserted_id))
 

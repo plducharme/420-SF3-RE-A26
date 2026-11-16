@@ -1,0 +1,19 @@
+{
+  "écuries": [
+    {
+      "_id": 1,
+      "nom": "Mercedes Grand Prix",
+      "couleurs": "gris-vert"
+    },
+    {
+      "_id": 2,
+      "nom": "Scuderia Ferrari",
+      "couleur": "rouge"
+    },
+    {
+      "_id": 3,
+      "nom": "McLaren Racing",
+      "couleur": "orange"
+    }
+  ]
+}
