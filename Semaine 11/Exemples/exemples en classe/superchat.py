@@ -75,7 +75,7 @@ class SuperChat(QFrame):
         self.bouton_connect.setEnabled(False)
 
     def connect_mongo(self):
-        url_connexion = "mongodb+srv://420sf3re:420sf3re@testcluster.va4xpjo.mongodb.net/?retryWrites=true&w=majority"
+        url_connexion = "mongodb+srv://user:password@server/?retryWrites=true&w=majority"
         self.client = MongoClient(url_connexion)
         self.bd = self.client["Messagerie"]
         self.collection_bd = self.bd["messages"]
