@@ -21,8 +21,9 @@ class AnalyseurDeDonnees(QMainWindow):
         logging.basicConfig(filename="analyseur.log",
                             level=logging.INFO,
                             format="%(levelname)s:%(name)s:%(message)s",
-                            filemode="a")
-        logging.debug("Application démarrée")
+                            filemode="a",
+                            encoding="utf8")
+        logger.debug("Application démarrée")
 
         self.widget_principal = QFrame()
         self.setCentralWidget(self.widget_principal)
@@ -32,7 +33,7 @@ class AnalyseurDeDonnees(QMainWindow):
 
         # menu
         self.barre_menu = self.menuBar()
-        self.menu_fichier = QMenu("&Fichier")
+        self.menu_fichier = QMenu("F&ichier")
         self.barre_menu.addMenu(self.menu_fichier)
         self.action_importer_donnees = QAction("Import du csv")
         self.action_importer_donnees.triggered.connect(self.import_donnees)
@@ -93,7 +94,7 @@ class AnalyseurDeDonnees(QMainWindow):
             except Exception as e:
                 logger.error(f"Mauvais format csv:\n {e}")
                 QMessageBox.warning(self, "Erreur d'import csv",
-                                    "Mauvais format csv!\nVeuillez charger un autre fichier")
+                                    "Mauvais format csv!\nVeuillez charger un autre fichier.")
 
     def calcul_moyenne_collisions(self):
         self.libelle_message.setText("")
@@ -122,7 +123,7 @@ class AnalyseurDeDonnees(QMainWindow):
                 f"Moyenne de collisions d'oiseaux dans l'intervalle [{debut}, {fin}]:")
             self.moyenne_collisions.setText(f"{moyenne}")
         except Exception as e:
-            logging.error(f"Erreur de calcul de moyenne\n{e}")
+            logger.error(f"Erreur de calcul de moyenne\n{e}")
             QMessageBox.critical(self, "Erreur de calcul", "Erreur de calcul de moyenne, veuillez contacter le support")
             return
 

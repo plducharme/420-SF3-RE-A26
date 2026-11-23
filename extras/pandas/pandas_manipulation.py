@@ -11,9 +11,14 @@ df = DataFrame({
 # Afficher le DataFrame
 print(df)
 
-# Ajouter une colonne
+# Ajouter une colonne (Series)
 df["Province"] = ["Québec", "Québec", "Québec", "Québec", "Ontario"]
 print(f"Après ajout colonne\n{df}")
+
+# supprimer une colonne (Series) pour retoruner un nouveau dataframe sans cette series
+# le dataframe original n'est pas modifiée
+df_sans_province = df.drop(columns=["Province"])
+print(df_sans_province)
 
 # Supprimer une colonne
 # inplace=True permet de modifier le DataFrame original au lieu de retourner un nouveau DataFrame
@@ -87,7 +92,7 @@ plt.title("Âge des personnes")
 plt.xlabel("Nom")
 plt.ylabel("Âge")
 # Afficher la légende
-plt.legend()
+plt.legend("Âge")
 # Afficher la grille
 plt.grid(True)
 # Afficher le graphique que l'on vient de configurer
