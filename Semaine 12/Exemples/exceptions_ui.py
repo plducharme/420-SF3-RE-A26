@@ -78,7 +78,6 @@ class AnalyseurDeDonnees(QMainWindow):
 
         self.df: DataFrame | None = None
 
-
     def import_donnees(self):
         fichier, filtres = QFileDialog.getOpenFileName(self, "Ouvrir un csv", ".", "*.csv")
         if fichier:
@@ -86,7 +85,7 @@ class AnalyseurDeDonnees(QMainWindow):
                 self.df = pd.read_csv(fichier)
                 self.input_debut.setText("0")
                 self.input_debut.setEnabled(True)
-                self.input_fin.setText(str(len(self.df)-1))
+                self.input_fin.setText(str(len(self.df) - 1))
                 self.input_fin.setEnabled(True)
                 self.bouton_calcul.setEnabled(True)
                 self.nb_enregistrements.setText(str(len(self.df)))
@@ -106,12 +105,11 @@ class AnalyseurDeDonnees(QMainWindow):
             self.libelle_message.setText("L'index de début ne peut pas être négatif")
             erreur = True
         fin = int(self.input_fin.text())
-        if fin > len(self.df)-1:
-            message = ""
+        if fin > len(self.df) - 1:
             if len(self.libelle_message.text()) > 0:
-                message = f"{self.libelle_message.text()}\nL'index de fin ne peut être supérieur à {len(self.df)-1}"
+                message = f"{self.libelle_message.text()}\nL'index de fin ne peut être supérieur à {len(self.df) - 1}"
             else:
-                message = f"L'index de fin ne peut être supérieur à {len(self.df)-1}"
+                message = f"L'index de fin ne peut être supérieur à {len(self.df) - 1}"
             self.libelle_message.setText(message)
             erreur = True
         if erreur:
@@ -129,10 +127,8 @@ class AnalyseurDeDonnees(QMainWindow):
             return
 
 
-
 if __name__ == "__main__":
     app = QApplication()
     ad = AnalyseurDeDonnees()
     ad.show()
     app.exec()
-
